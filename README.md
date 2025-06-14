@@ -10,7 +10,6 @@ The Advanced Calendar Application is a modern, user-friendly calendar solution i
 ## 🚀 Live Demo
 
 [View Live Demo](https://your-calendar-app-demo.com)  
-*Note: Replace with your actual deployment link*
 
 ## ✨ Features
 
