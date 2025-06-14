@@ -1,0 +1,52 @@
+.event-legend-container {
+  background: var(--card-bg);
+  backdrop-filter: blur(20px);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-2xl);
+  border: 1px solid var(--card-border);
+  padding: var(--space-lg);
+  animation: fadeIn 0.7s ease-out 0.2s both;
+}
+
+.event-legend-title {
+  font-size: 1.2rem;
+  margin-bottom: var(--space-md);
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+.event-legend-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-md);
+}
+
+.event-legend-item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+.event-legend-color {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 2px solid white;
+  box-shadow: var(--shadow-sm);
+}
+
+.event-legend-label {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+@media (max-width: 768px) {
+  .event-legend-items {
+    gap: var(--space-sm);
+  }
+  
+  .event-legend-label {
+    font-size: 0.8rem;
+  }
+}
+

@@ -1,0 +1,39 @@
+.calendar-grid-container {
+  background: var(--card-bg);
+  backdrop-filter: blur(20px);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-2xl);
+  border: 1px solid var(--card-border);
+  overflow: hidden;
+  margin-bottom: var(--space-lg);
+  animation: fadeIn 0.6s ease-out 0.1s both;
+}
+
+.calendar-week-header {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  background: linear-gradient(135deg, var(--bg-gray-50) 0%, var(--bg-gray-100) 100%);
+  border-bottom: 1px solid var(--bg-gray-200);
+}
+
+.calendar-week-day {
+  padding: var(--space-lg);
+  text-align: center;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+@media (max-width: 768px) {
+  .calendar-week-day {
+    padding: var(--space-md);
+    font-size: 0.8rem;
+  }
+}

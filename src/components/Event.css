@@ -1,0 +1,38 @@
+.calendar-event {
+  padding: 6px 8px;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: var(--transition-normal);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.calendar-event:hover {
+  transform: translateX(2px);
+  box-shadow: var(--shadow-sm);
+}
+
+.calendar-event-title {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--text-primary);
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.calendar-event-time {
+  font-size: 0.7rem;
+  font-weight: 500;
+  margin-top: 2px;
+}
+
+@media (max-width: 768px) {
+  .calendar-event-title {
+    font-size: 0.7rem;
+  }
+  
+  .calendar-event-time {
+    font-size: 0.65rem;
+  }
+}

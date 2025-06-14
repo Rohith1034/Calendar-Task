@@ -1,0 +1,84 @@
+.calendar-day {
+  min-height: 160px;
+  padding: var(--space-md);
+  border: 1px solid var(--bg-gray-200);
+  background-color: var(--bg-white);
+  position: relative;
+  transition: var(--transition-normal);
+}
+
+.calendar-day:hover {
+  background-color: var(--bg-gray-50);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+  z-index: 2;
+}
+
+.calendar-day--other-month {
+  background-color: var(--bg-gray-100);
+  color: var(--text-disabled);
+}
+
+.calendar-day--today {
+  background-color: rgba(59, 130, 246, 0.05);
+  border-left: 3px solid var(--event-meeting);
+}
+
+.calendar-day-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--space-xs);
+}
+
+.calendar-day-number {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.calendar-day--today .calendar-day-number {
+  color: var(--event-meeting);
+}
+
+.calendar-day-today-badge {
+  background-color: var(--event-meeting);
+  color: white;
+  font-size: 0.7rem;
+  padding: 2px 6px;
+  border-radius: 20px;
+  font-weight: 600;
+}
+
+.calendar-day-events {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+  overflow: hidden;
+}
+
+.calendar-day-more-events {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  padding: 4px;
+  text-align: center;
+  margin-top: 4px;
+  background-color: var(--bg-gray-100);
+  border-radius: var(--radius-sm);
+}
+
+@media (max-width: 768px) {
+  .calendar-day {
+    min-height: 120px;
+    padding: var(--space-sm);
+  }
+  
+  .calendar-day-number {
+    font-size: 1rem;
+  }
+}
