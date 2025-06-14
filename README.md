@@ -9,7 +9,7 @@ The Advanced Calendar Application is a modern, user-friendly calendar solution i
 
 ## 🚀 Live Demo
 
-[View Live Demo](https://your-calendar-app-demo.com)  
+[View Live Demo](https://calendar-sand-rho.vercel.app/)  
 
 ## ✨ Features
 
@@ -30,7 +30,7 @@ The Advanced Calendar Application is a modern, user-friendly calendar solution i
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/advanced-calendar-app.git
+git clone https://github.com/Rohith1034/Calendar-Task.git
 
 # Navigate to project directory
 cd advanced-calendar-app
